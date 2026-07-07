@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARS - Rutinas</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="assets/styles/genera_rutina_style.css">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- JS -->
+     <script src="assets/scripts/rutina.js"></script>
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+    <div class="logo-container">
+        <span class="logo-text">STARS</span>
+        <img src="assets/images/logo.png" alt="Logo" class="logo-img">
+    </div>
+
+    <nav class="menu-icons">
+        <i class="fa-solid fa-user"></i>
+        <a href="menu_principal.html"><i class="fa-solid fa-house"></i></a>
+
+        <div class="active_icon">
+             <a href="genera_rutina.html"><i class="fa-solid fa-pen-to-square active-icon"></i></a>
+        </div>
+
+         <a href="rutinas_guardadas.html"><i class="fa-solid fa-list-check active-icon"></i></a>
+        <i class="fa-solid fa-book"></i>
+        <a href="index.html"><i class="fa-solid fa-right-left"></i></a>
+    </nav>
+</header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="content">
+
+        <!-- FILA PRINCIPAL -->
+        <div class="grid-row">
+
+            <!-- TARJETA DE RUTINAS -->
+            <div class="card left-card">
+                <h2>Rutinas <i class="fa-solid fa-dumbbell"></i></h2>
+
+                <p class="sub">Nivel de intensidad:</p>
+
+                <div class="intensity-buttons">
+                    <a href="rutina_normal.html" class="intensity-btn active">Normal</a>
+                    <a href="genera_rutina.html" class="intensity-btn">Intermedio</a>
+                    <a href="rutina_alto.html" class="intensity-btn">Alto</a>
+                </div>
+
+
+                <p class="sub">Preferencias:</p>
+                <ul class="preferences">
+                    <li>Cardio</li>
+                    <li>Tonificación</li>
+                </ul>
+                <p class="sub">Tiempo de preferencia:</p>
+                <ul class="time">
+                    <li>10 min</li>
+                    <li>30 min</li>
+                    <li>40 min</li>
+                    <li>60 min</li>
+                </ul>
+            </div>
+
+            <!-- TARJETA GENERADAS POR IA  -->
+            <div class="card ia-card">
+                <h2>Generadas por IA</h2>
+
+                <div class="routine-container">
+
+                    <!-- Rutina 1 -->
+                    <div class="routine-block">
+                        <h3>1. Centrado en Cardio para casa:</h3>
+                        <ul>
+                            <li>Calentamiento nivel normal</li>
+                            <li>Estiramientos dinámicos por 5 minutos</li>
+                            <li>Trote suave los primeros 5 minutos</li>
+                            <li>
+                                Circuito (2 a 3 veces):
+                                <ul>
+                                    <li>Burpees – 30 seg</li>
+                                    <li>Saltos de tijera – 30 seg</li>
+                                    <li>Escaladoras – 30 seg</li>
+                                    <li>Talones a glúteos – 30 seg</li>
+                                    <li>Descanso – 30 seg</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <!-- Rutina 2 -->
+                    <div class="routine-block">
+                        <h3>2. Centrado en tonificación para casa:</h3>
+                        <ul>
+                            <li>Tren inferior (3 series):</li>
+                            <ul>
+                                <li>Sentadillas – 20 repeticiones</li>
+                                <li>Zancadas – 20 repeticiones</li>
+                                <li>Planchas – 20 repeticiones</li>
+                                <li>Descanso – 30 seg</li>
+                            </ul>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="save-button" id="saveButton">¿Desea guardar rutina?</div>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
