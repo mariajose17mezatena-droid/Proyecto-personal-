@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rutinas Guardadas</title>
+
+    <link rel="stylesheet" href="assets/styles/rutinas_guardadas.css">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+    <div class="logo-container">
+        <span class="logo-text">STARS</span>
+        <img src="assets/images/logo.png" alt="Logo" class="logo-img">
+    </div>
+
+    <nav class="menu-icons">
+        <i class="fa-solid fa-user"></i>
+        <a href="menu_principal.html"><i class="fa-solid fa-house"></i></a>
+
+        <a href="genera_rutina.html"><i class="fa-solid fa-pen-to-square"></i></a>
+        
+        <div class="active_icon">
+        <a href="rutinas_guardadas.html"><i class="fa-solid fa-list-check active-icon"></i></a>
+        </div>
+        <i class="fa-solid fa-book"></i>
+        <a href="index.html"><i class="fa-solid fa-right-left"></i></a>
+    </nav>
+    </header>
+
+    <!-- CONTENIDO -->
+    <main class="content">
+        <h1>Rutinas Guardadas</h1>
+
+        <ul class="routine-list">
+            <li>🔥 Rutina de Cardio - 20 min</li>
+            <li>💪 Rutina de Tonificación - 30 min</li>
+            <li>🏋️‍♂️ Rutina Completa - 45 min</li>
+        </ul>
+
+        <!-- Botón de eliminar -->
+        <button id="delete-btn" class="delete-button">
+            Eliminar rutina
+        </button>
+    </main>
+
+    <script src="assets/scripts/rutinas_guardadas.js"></script>
+</body>
+</html>
