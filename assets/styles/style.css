@@ -1,0 +1,236 @@
+/* LOGO */
+.logo img {
+  height: 100px;
+  width: auto;
+  display: block;
+}
+
+/* RUTA */
+:root{
+  --black: #000000;
+  --yellow: #FFD600;
+  --light: #F5F5F5;
+  --white: #FFFFFF;
+  --max-width: 1200px;
+}
+
+/* Reset ligero */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family: "Roboto", sans-serif;
+  color:var(--black);
+  background:var(--light);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* TIPOGRAFIA TITULOS */
+h1, h2, h3{
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 600;
+}
+
+/* Contenedor centrado */
+.container{
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:22px 28px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+
+/* ENCABEZADO */
+.site-header{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:60;
+  padding-top:8px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.25), rgba(0,0,0,0));
+  color:var(--white);
+  border-bottom-left-radius:6px;
+  border-bottom-right-radius:6px;
+}
+
+/* NAVEGACIÓN */
+.nav-list{
+  list-style:none;
+  display:flex;
+  gap:20px;
+  align-items:center;
+  margin:0;
+  padding:0;
+}
+.nav-list a{
+  color:var(--white);
+  text-decoration:none;
+  font-weight:600;
+  font-size:14px;
+  padding:8px 10px;
+  opacity:0.9;
+}
+.nav-list a:hover{ opacity:1; text-decoration:underline; }
+
+/* ENCABEZADO CTAs */
+.header-cta{ display:flex; gap:12px; align-items:center; }
+.btn-outline{
+  display:inline-block;
+  padding:8px 14px;
+  border-radius:999px;
+  border:2px solid var(--white);
+  color:var(--white);
+  background:transparent;
+  font-weight:700;
+  text-decoration:none;
+  font-size:13px;
+}
+.btn-ghost{
+  display:inline-block;
+  padding:8px 14px;
+  border-radius:999px;
+  border:none;
+  background:var(--yellow);
+  color:var(--black);
+  font-weight:800;
+  text-decoration:none;
+  font-size:13px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* HERO */
+.hero{
+  position:relative;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:0 20px;
+  overflow:hidden;
+  text-align:center;
+}
+
+/* imagen de fondo con overlay oscuro */
+.background-image{
+  position:absolute;
+  inset:0;
+  background-size:cover;
+  background-position:center;
+  z-index:0;
+}
+
+/* overlay oscuro semitransparente */
+.background-image::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,0.55);
+  z-index:1;
+}
+
+/* TARJETA CENTRAL */
+.hero-card{
+  position:relative;
+  z-index:10;
+  max-width:640px;
+  width:100%;
+  padding:32px 36px;
+  border-radius:16px;
+  background: rgba(255,255,255,0.88);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+/* Textos hero dentro de la tarjeta */
+.hero-card h1{
+  font-size:44px;
+  color:var(--black);
+  margin-bottom:8px;
+  font-weight:800;
+  line-height:1.05;
+  letter-spacing:0.2px;
+}
+.hero-card h3{
+  font-size:18px;
+  font-weight:600;
+  color:rgba(0,0,0,0.7);
+  margin-bottom:18px;
+}
+
+/* Acciones/botones */
+.actions{
+  display:flex;
+  gap:16px;
+  margin:8px 0 16px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+.primary-btn{
+  display:inline-block;
+  padding:14px 34px;
+  background:var(--black);
+  color:var(--white);
+  border-radius:999px;
+  font-weight:800;
+  text-decoration:none;
+  min-width:160px;
+  text-align:center;
+}
+.secondary-btn{
+  display:inline-block;
+  padding:12px 30px;
+  background:transparent;
+  color:var(--black);
+  border-radius:999px;
+  border:2px solid var(--black);
+  font-weight:700;
+  text-decoration:none;
+  min-width:160px;
+  text-align:center;
+}
+
+/* pequeño CTA amarillo */
+.small-cta{
+  margin-top:12px;
+  display:inline-block;
+  padding:8px 18px;
+  border-radius:8px;
+  background:var(--yellow);
+  color:var(--black);
+  text-decoration:none;
+  font-weight:700;
+}
+
+/* texto Why Join Us */
+.why{
+  margin-top:12px;
+  color:rgba(0,0,0,0.7);
+  font-size:14px;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:24px 12px;
+  background:transparent;
+  color:rgba(0,0,0,0.6);
+}
+
+/* Responsiveness */
+@media (max-width:900px){
+  .hero-card h1{ font-size:34px; }
+  .primary-btn, .secondary-btn { min-width:140px; }
+  .container { padding:14px 18px; }
+}
+
+@media (max-width:600px){
+  .nav-list { display:none; } 
+  .hero-card{ padding:20px; border-radius:12px; }
+  .hero-card h1{ font-size:26px; }
+  .primary-btn, .secondary-btn{ min-width:120px; padding:10px 14px; }
+}

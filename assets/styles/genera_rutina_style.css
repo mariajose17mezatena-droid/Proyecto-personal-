@@ -1,0 +1,165 @@
+/* FUENTES Y GENERAL */
+body {
+    background: #F5F5F5;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ---------------- HEADER ---------------- */
+.header {
+    background: #FFD600;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.25);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.logo-img {
+    width: 45px;
+    height: 45px;
+}
+
+/* ICONOS DEL MENÚ */
+.menu-icons {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.menu-icons i {
+    font-size: 23px;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+    color: #000000;
+}
+
+/* Zoom en hover */
+.menu-icons i:hover {
+    transform: scale(1.25);
+}
+
+/* Icono lapiz */
+.menu-icons .active_icon {
+    background: #000000;
+    padding: 10px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    font-size: 19px;
+}
+
+/* ---------------- CONTENIDO PRINCIPAL ---------------- */
+.content {
+    padding: 40px;
+}
+
+/* FILAS TIPO GRID (MISMO ESTILO QUE EL MENÚ PRINCIPAL) */
+.grid-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+}
+
+/* TARJETAS */
+.card {
+    background: #FFFFFF;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.08);
+}
+
+/* Estilo para Rutinas */
+.left-card {
+    height: fit-content;
+}
+
+/* IA tarjeta grande */
+.ia-card {
+    grid-column: span 1;
+}
+
+/* TITULOS */
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+/* SUBTÍTULOS */
+.sub {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* BOTONES DE INTENSIDAD */
+.intensity-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.intensity-btn {
+    background: #E0E0E0;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background 0.2s ease, transform 0.2s;
+}
+
+.intensity-btn:hover {
+    transform: scale(1.06);
+}
+
+.intensity-btn.active {
+    background: #FFD600;
+    font-weight: bold;
+}
+
+/* RUTINAS */
+.routine-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.routine-block {
+    width: 48%;
+    line-height: 1.6;
+}
+
+/* BOTÓN GUARDAR */
+.save-button {
+    margin-top: 25px;
+    background: #000;
+    color: #FFF;
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.save-button:hover {
+    transform: scale(1.03);
+}

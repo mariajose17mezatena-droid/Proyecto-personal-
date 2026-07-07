@@ -1,0 +1,173 @@
+/* FUENTES Y GENERAL */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #F5F5F5;
+}
+
+/* HEADER */
+.header {
+    background: #FFD600;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.25);
+}
+
+/* Logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.logo-img {
+    width: 45px;
+    height: 45px;
+}
+
+/* Iconos del menú */
+.menu-icons {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.menu-icons i {
+    font-size: 23px;
+    cursor: pointer;
+    transition: transform 0.23s ease;
+    color: #000000;
+}
+
+/* Zoom hover */
+.menu-icons i:hover {
+    transform: scale(1.25);
+}
+
+/* Icono Home */
+.home-icon {
+    background: #000000;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.home-icon i {
+    color: #FFFFFF;
+    font-size: 19px;
+}
+
+
+/* CONTENIDO PRINCIPAL */
+.content {
+    padding: 30px;
+}
+
+.grid-row {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+/* TARJETAS */
+.card {
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card-large {
+    width: 30%;
+    min-height: 180px;
+}
+
+.center-card {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFD700;
+}
+
+.ejerc {
+    width: 30%;
+}
+
+.small-card {
+    width: 30%;
+}
+
+/* 4 IMÁGENES EJERCICIOS */
+.exercise-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.exercise-grid img {
+    display: block;
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    object-position: center;
+    background: #f0f0f0;
+    border-radius: 10px;
+}
+
+/* CÍRCULO DE EFICIENCIA */
+.efficiency-circle {
+    width: 180px;
+    height: 180px;
+    border: 20px solid #FFD700;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.efficiency-circle span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* TARJETA INFORME */
+.report-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.report-item {
+    text-align: center;
+}
+
+.icon {
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+.num {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.label {
+    font-size: 14px;
+    color: #444444;
+}
