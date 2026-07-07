@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+
+    <!-- Tipografia -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet" />
+
+    <!-- Archivo CSS -->
+    <link rel="stylesheet" href="assets/styles/register_style.css">
+</head>
+
+<body>
+
+    <!-- Encabezado negro -->
+    <header class="top-bar"></header>
+
+    <!-- Contenido en dos columnas -->
+    <section class="layout">
+
+        <!-- Formulario -->
+        <div class="register-card">
+            <h2>REGISTER</h2>
+
+            <label for="name">Nombre*</label>
+            <input type="text" id="name" placeholder="Ingresa tu nombre">
+
+            <label for="email">Email*</label>
+            <input type="email" id="email" placeholder="Ingresa tu email">
+
+            <label for="pass1">Create password*</label>
+            <input type="password" id="pass1" placeholder="Crea una contraseña">
+
+            <label for="pass2">Retype password*</label>
+            <input type="password" id="pass2" placeholder="Repite tu contraseña">
+
+            <button class="register-btn" onclick="register()">REGISTER</button>
+        </div>
+
+        <!-- Imagen decorativa -->
+        <div class="side-image">
+            <img src="assets/images/gym_register.jpg" alt="Imagen decorativa">
+        </div>
+
+    </section>
+
+    <script src="assets/scripts/register_script.js"></script>
+</body>
+</html>
