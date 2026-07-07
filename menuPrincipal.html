@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARS - Menú Principal</title>
+    <link rel="stylesheet" href="assets/styles/menu_principal_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Barra superior -->
+<header class="header">
+    <div class="logo-container">
+        <span class="logo-text">STARS</span>
+        <img src="assets/images/logo.png" alt="Logo" class="logo-img">
+    </div>
+
+    <nav class="menu-icons">
+        <i class="fa-solid fa-user"></i>
+
+        <div class="home-icon">
+            <a href="menu_principal.html"><i class="fa-solid fa-house active-icon"></i></a>
+        </div>
+
+        <a href="genera_rutina.html"><i class="fa-solid fa-pen-to-square"></i></a>
+         <a href="rutinas_guardadas.html"><i class="fa-solid fa-list-check"></i></a>
+        <i class="fa-solid fa-book"></i>
+        <a href="index.html"><i class="fa-solid fa-right-left"></i></a> 
+    </nav>
+</header>
+
+
+
+    <!-- Contenido principal -->
+    <main class="content">
+
+        <!-- Primera fila -->
+        <div class="grid-row">
+            <!-- Tarjeta bienvenida -->
+            <div class="card card-large">
+                <p><strong>Bienvenido user, USER</strong><br>
+                Se recomienda una rutina de calentamiento temprana, se sugiere trotar durante 30 minutos.</p>
+            </div>
+
+            <!-- Tarjeta amarilla con puntos -->
+            <div class="card recommendation-card">
+                <h3>Recomendaciones</h3>
+
+                <ul class="rec-list">
+                <li>Haz 10 minutos de estiramientos antes de iniciar.</li>
+                <li>Incluye ejercicios de fuerza 3 veces por semana.</li>
+                <li>Mantén una hidratación adecuada durante la rutina.</li>
+                </ul>
+            </div>
+
+
+            <!-- Tarjeta ejercicios (4 imágenes) -->
+            <div class="card ejerc">
+                <h3>Ejercicios Recomendados</h3>
+
+                <div class="exercise-grid">
+                    <img src="assets/images/Ejercicio1.jpg" alt="Ejercicio 1">
+                    <img src="assets/images/Ejercicio2.jpg" alt="Ejercicio 2">
+                    <img src="assets/images/Ejercicio3.jpg" alt="Ejercicio 3">
+                    <img src="assets/images/Ejercicio4.jpg" alt="Ejercicio 4">
+                </div>
+            </div>
+        </div>
+
+        <!-- Segunda fila -->
+        <div class="grid-row">
+            <!-- Tarjeta eficiencia -->
+            <div class="card small-card">
+                <h3>Progreso semanal de ejercicios</h3>
+                <div class="efficiency-circle">
+                    <span>84%</span>
+                </div>
+            </div>
+
+            <!-- Tarjeta informe -->
+            <div class="card small-card">
+                <h3>Informe Semanal de Rendimiento</h3>
+                <div class="report-grid">
+                    <div class="report-item">
+                        <i class="fa-solid fa-dumbbell icon"></i>
+                        <p class="num">11</p>
+                        <p class="label">Ejercicios</p>
+                    </div>
+                    <div class="report-item">
+                        <i class="fa-solid fa-droplet icon"></i>
+                        <p class="num">1856</p>
+                        <p class="label">Kcal</p>
+                    </div>
+                    <div class="report-item">
+                        <i class="fa-solid fa-clock icon"></i>
+                        <p class="num">107</p>
+                        <p class="label">Minutos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
